@@ -10,9 +10,12 @@ body {
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
+    --icon-color: #ff9a00;
+    --secondary-icon-color: #0adf4f;
     --border-color: #ff9a0045;
+    --secondary-border-color: #0adf4f45;
     --text-decoration-color: #ff9a00;
+    --secondary-text-decoration-color: #0adf4f;
 }
 
 .container {
@@ -47,6 +50,10 @@ body {
     margin-bottom: 15px;
 }
 
+.my-own-info .resume__block {
+    border-bottom: 3px solid var(--secondary-border-color);
+}
+
 @media screen and (max-width: 576px) {
     .main-info,
     .contact_info_container {
@@ -73,6 +80,10 @@ body {
     margin-bottom: 15px;
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
+}
+
+.my-own-info .contact-info__header {
+    text-decoration-color: var(--secondary-text-decoration-color);
 }
 
 .contact-info__sub-header {
@@ -112,6 +123,10 @@ body {
     fill: var(--icon-color);
 }
 
+.my-own-info .contact-info__item-icon path {
+    fill: var(--secondary-icon-color);
+}
+
 .contact-info__item-icon {
     height: 1.1428rem;
     vertical-align: text-bottom;
@@ -124,6 +139,10 @@ body {
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+}
+
+.my-own-info .contact-info__avatar {
+    border-color: var(--secondary-text-decoration-color);
 }
 
 .intro {
@@ -145,6 +164,14 @@ body {
 
 .intro__icon path {
     fill: var(--text-decoration-color);
+}
+
+.my-own-info .intro__icon path {
+    fill: var(--secondary-icon-color);
+}
+
+.my-own-info .contact-info__avatar {
+    border-color: var(--secondary-text-decoration-color);
 }
 
 .intro_text {
@@ -187,6 +214,10 @@ body {
     text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
+}
+
+.my-own-info .experiences__company-header-name {
+    text-decoration-color: var(--secondary-text-decoration-color);
 }
 
 .experiences__company-project {
@@ -262,14 +293,22 @@ body {
     display: inline-block;
     padding: 4px;
     text-decoration: none;
-    border: 2px solid #ff9a00;
-    color: #ff9a00;
+    border: 2px solid var(--secondary-text-decoration-color);
+    color: var(--secondary-text-decoration-color);
     border-radius: 6px;
     margin-bottom: 2px;
     transition: all 0.3s;
 }
 
 .github:hover {
-    background-color: #ff9a00;
+    background-color: var(--secondary-text-decoration-color);
     color: #fff;
+}
+
+.my-own-info .link-hover {
+    transition: all 0.4s;
+}
+
+.my-own-info .link-hover:hover {
+    color: var(--secondary-text-decoration-color);
 }
