@@ -210,6 +210,7 @@ body {
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 .additional-info {
@@ -255,4 +256,21 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.github {
+    display: inline-block;
+    padding: 4px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #ff9a00;
+    color: #ff9a00;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.github:hover {
+    background-color: #ff9a00;
+    color: #fff;
 }
