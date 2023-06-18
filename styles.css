@@ -312,3 +312,7 @@ body {
 .my-own-info .link-hover:hover {
   color: var(--secondary-text-decoration-color);
 }
+
+.ms-2 {
+  margin-left: 20px;
+}
